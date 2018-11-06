@@ -24,8 +24,7 @@ public class GameOfLife extends JFrame implements ActionListener {
                 for (int j = 0; j < l1.getGame().length; j++)
                     l1.check(i, j);
 
-            Thread.sleep(50);
-            System.out.println('\u000C');
+            Thread.sleep(500);
         }
     }
 
@@ -33,10 +32,10 @@ public class GameOfLife extends JFrame implements ActionListener {
         int BOX_DIM = 25;
         for (int i = 0; i < array.length; i++)
             for (int j = 0; j < array[0].length; j++){
-                g.setColor(array[i][j].equals("□") ? Color.WHITE : Color.BLUE);
-                g.fillRect(i * BOX_DIM, j * BOX_DIM, BOX_DIM, BOX_DIM);
+                g.setColor(array[i][j].equals("□") ? Color.WHITE : Color.BLACK);
+                g.fillRect(j * BOX_DIM, i * BOX_DIM, BOX_DIM, BOX_DIM);
                 g.setColor(Color.GRAY);
-                g.drawRect(i * BOX_DIM, j * BOX_DIM, BOX_DIM, BOX_DIM);
+                g.drawRect(j * BOX_DIM, i * BOX_DIM, BOX_DIM, BOX_DIM);
             }
     }
 }
