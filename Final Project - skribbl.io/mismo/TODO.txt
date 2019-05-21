@@ -1,0 +1,14 @@
+display timer - ABANDONED
+
+display players - DONE
+
+display scores - add to leaderboard?
+
+better drawing (?) - probably no
+
+colors - maybe, var on color list, change color of point
+
+erase - boolean on button, change color of point
+
+clear drawing - paper.clear() ?
+
