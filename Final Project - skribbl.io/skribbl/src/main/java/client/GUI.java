@@ -146,7 +146,7 @@ public class GUI extends JFrame implements Actions
 
 
         this.add(panel);
-        guessField.setText("Write your makeGuess here");
+        guessField.setText("Type here");
         guessField.setEnabled(false);
 
         guessField.requestFocusInWindow();
